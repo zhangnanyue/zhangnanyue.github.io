@@ -85,24 +85,26 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>终于开始去写博客了，要学习下MarkDown语法，第一篇博客就用来整理，记录常用的MarkDown语法，方便以后的查询，使用。</p>
-<p>MarkDown语法主要分为以下几个部分：标题，强调，列表等。</p>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p><strong>公式和说明</strong>：</p>
-<p><code>#</code>+<code>空格</code>+<code>文字</code>：一个#代表一级标题，两个#代表二级标记，n个#代表n级代表标题(目前只能写到6级标题)。                </p>
+<p>MarkDown语法主要分为以下几个部分：标题，强调，引用，分割线，列表等。</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p><strong>功能</strong>：表示各级标题（最多有6级标题）</p>
+<p><strong>公式和说明</strong>：</p>
+<p><code>#</code>+<code>空格</code>+<code>文字</code>：如果中间不加<code>空格</code>，在本地的MarkDown编辑器上可以正确显示标题，但同步到网站上，则不能正确显示。                </p>
 <p><strong>示例</strong>：</p>
 <p># 我爱MarkDown</p>
 <p>## 我爱MarkDown</p>
 <p>### 我爱MarkDown</p>
 <p><strong>效果</strong>：</p>
 <h1 id="我爱MarkDown"><a href="#我爱MarkDown" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h1><h2 id="我爱MarkDown-1"><a href="#我爱MarkDown-1" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h2><h3 id="我爱MarkDown-2"><a href="#我爱MarkDown-2" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h3><hr>
-<h1 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h1><p><strong>公式和说明</strong>：</p>
-<p><code>*</code>+<code>文字</code>+<code>*</code>：文字倾斜</p>
-<p><code>**</code>+<code>文字</code>+<code>**</code>：文字加粗</p>
-<p><code>***</code>+<code>文字</code>+<code>***</code>：文字加粗加斜</p>
+<h1 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h1><p><strong>功能</strong>：文字的倾斜，加粗，倾斜和加粗，加删除线。</p>
+<p><strong>公式和说明</strong>：</p>
+<p><strong><code>*</code>+<code>文字</code>+<code>*</code></strong>  或者 <strong><code>_</code>+<code>文字</code>+<code>_</code></strong>：文字倾斜</p>
+<p><code>**</code>+<code>文字</code>+<code>**</code> 或者 <code>__</code>+<code>文字</code>+<code>__</code>：文字加粗</p>
+<p><code>***</code>+<code>文字</code>+<code>***</code>或者 <strong><code>___</code>+<code>文字</code>+<code>___</code></strong>：文字加粗加斜</p>
 <p><code>~~</code>+<code>文字</code>+<code>~~</code>：文字加删除线</p>
 <p><strong>示例</strong>：</p>
-<p>*我爱MarkDown*</p>
-<p>**我爱MarkDown**</p>
-<p>***我爱MarkDown***</p>
+<p>*我爱MarkDown*  或  _我爱MarkDown_ </p>
+<p>**我爱MarkDown** 或 __我爱MarkDown__ </p>
+<p>***我爱MarkDown*** 或 ___我爱MarkDown___</p>
 <p>~~我爱MarkDown~~</p>
 <p><strong>效果</strong>：</p>
 <p><em>我爱MarkDown</em></p>
@@ -110,11 +112,63 @@
 <p><strong><em>我爱MarkDown</em></strong></p>
 <p><del>我爱MarkDown</del></p>
 <hr>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p><strong>功能</strong>：就只是引用吧</p>
+<p><strong>公式和说明</strong>：</p>
+<p><code>&gt;</code>+文字</p>
+<p><strong>示例</strong>：</p>
+<p>&gt;我爱MarkDown</p>
+<p>&gt;&gt;我爱MarkDown</p>
+<p>&gt;&gt;&gt;我爱MarkDown</p>
+<p><strong>效果</strong>：</p>
+<blockquote>
+<p>我爱MarkDown</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>我爱MarkDown</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>我爱MarkDown</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<hr>
+<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p><strong>功能</strong>：添加分割线，分割功能</p>
+<p><strong>公式和说明</strong>：</p>
+<p>符号<code>-</code> 或者<code>*</code> ，3个及以上</p>
+<p>示例：</p>
+<p>-–</p>
+<p>-—</p>
+<p>-—-</p>
+<p>-—–</p>
+<p>***</p>
+<p>****</p>
+<p>*****</p>
+<p>******</p>
+<p>效果：</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><strong>功能</strong>：添加网站链接，图片链接等</p>
+<p><strong>公式和说明</strong>：</p>
+<p>[自定义名称](url)：网站链接</p>
+<p><strong>示例</strong>：</p>
+<p>[我的github](<a href="https://zhangnanyue.github.io\">https://zhangnanyue.github.io\</a>)</p>
+<p><strong>效果</strong>：</p>
+<p><a href="https://zhangnanyue.github.io">我的github</a></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangnanyue.github.io/2019/10/14/MarkDown语法总结/" data-id="ck1qaw5p7000003jba24fhucp" class="article-share-link">Share</a>
+      <a data-url="https://zhangnanyue.github.io/2019/10/14/MarkDown语法总结/" data-id="ck1qhq9qp0000frjb39msngc2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -164,7 +218,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangnanyue.github.io/2019/10/12/hello-world/" data-id="ck1qaw5pb000103jbge5mr3lr" class="article-share-link">Share</a>
+      <a data-url="https://zhangnanyue.github.io/2019/10/12/hello-world/" data-id="ck1qhq9qs0001frjbj7kijx29" class="article-share-link">Share</a>
       
       
     </footer>
