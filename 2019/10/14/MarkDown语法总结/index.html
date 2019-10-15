@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://s2.ax1x.com/2019/10/15/KCjnzj.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/10/15/K9LU3R.th.jpg">
 <meta property="og:image" content="https://s2.ax1x.com/2019/10/15/K9LU3R.th.jpg">
-<meta property="og:updated_time" content="2019-10-15T11:18:37.749Z">
+<meta property="og:updated_time" content="2019-10-15T14:25:39.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MarkDown语法总结">
 <meta name="twitter:description" content="​        终于开始去写博客了，要学习下MarkDown语法，第一篇博客就用来整理，记录常用的MarkDown语法，方便以后的查询，使用。该篇语法总结不能一次性写全，所以会持续的更新，完善。 ​        MarkDown语法主要分为以下几个部分：标题，强调，引用，分割线，链接，列表，代码区块，转义字符等，还有一些零碎知识点。 标题功能：表示各级标题（最多有6级标题） 公式和说明： #+">
@@ -95,7 +95,6 @@
 <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p><strong>功能</strong>：表示各级标题（最多有6级标题）</p>
 <p><strong>公式和说明</strong>：</p>
 <p><code>#</code>+<code>空格</code>+<code>文字</code>        </p>
-<p>​    </p>
 <p><strong>注意</strong>：如果中间不加<code>空格</code>，在本地的MarkDown编辑器上可以正确显示，但同步到网站上，则不能正确显示    </p>
 <p>示例**：</p>
 <p># 我爱MarkDown</p>
@@ -131,6 +130,7 @@
 <p><strong>效果</strong>：</p>
 <p><img src="https://s2.ax1x.com/2019/10/15/KCjnzj.png" alt="引用效果图"></p>
 <p><strong>注意</strong>：这里的效果用了截图，因为本地的typora输出的结果和网站的显示结果不同，暂时还不知道原因，待之后探究</p>
+<hr>
 <h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p><strong>功能</strong>：添加分割线，分割功能</p>
 <p><strong>公式和说明</strong>：</p>
 <p>符号    <code>-</code>     或    <code>*</code> ，3个及以上</p>
@@ -212,16 +212,7 @@
 </li>
 <li><p>我爱MarkDown6</p>
 </li>
-<li><p>我爱MarkDown7</p>
-<ol>
-<li>我爱MarkDown8<ol>
-<li>我爱我爱MarkDown9</li>
 </ol>
-</li>
-</ol>
-</li>
-</ol>
-<hr>
 <h1 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h1><p><strong>功能</strong>：可以在区块中写代码</p>
 <p><strong>公式和说明</strong>：</p>
 <ol>
@@ -233,11 +224,9 @@
 <p> 代码1</p>
 <p> 代码2</p>
 <p> 代码3</p>
-<p> …………</p>
-<p> ```</p>
 </li>
 </ol>
-<p><strong>示例</strong>：<br>`print(“我爱MarkDown”)`</p>
+<pre><code>\`\`\`</code></pre><p><strong>示例</strong>：<br>`print(“我爱MarkDown”)`</p>
 <p>```</p>
 <p>include <iostream></iostream></p>
 <p>int main() {<br>    std::cout &lt;&lt; “我爱MarkDown” &lt;&lt; std::endl;<br>    return 0;<br>}</p>
@@ -256,16 +245,15 @@
 <p>\* 我爱MarkDown2</p>
 <p>\—</p>
 <p>\+我爱MarkDown3</p>
-<p>\1. 我爱MarkDown4</p>
 <p><strong>效果</strong>：</p>
 <p># 我爱MarkDown1</p>
 <p>* 我爱MarkDown2</p>
 <p>-–</p>
 <p>+ 我爱MarkDown3</p>
-<p>\1. 我爱MarkDown4</p>
-<p>如果在特殊符号前不加转义字符，则会按照之前所有的MarkDown规则，输出相应的结果，但是在加了转义字符后，会将特殊字符变为正常的字符输出。</p>
+<p><strong>注意</strong>：如果在特殊符号前不加转义字符，则会按照之前所有的MarkDown规则，输出相应的结果，但是在加了转义字符后，会将特殊字符变为正常的字符输出。</p>
 <hr>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1><hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>
 <p><a href="https://blog.csdn.net/u014061630/article/details/81359144" target="_blank" rel="noopener">https://blog.csdn.net/u014061630/article/details/81359144</a></p>
 <p><a href="https://github.com/younghz/Markdown" target="_blank" rel="noopener">https://github.com/younghz/Markdown</a></p>
 <p><a href="https://www.jianshu.com/p/b30955885e6d" target="_blank" rel="noopener">https://www.jianshu.com/p/b30955885e6d</a></p>
@@ -273,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangnanyue.github.io/2019/10/14/MarkDown语法总结/" data-id="ck1rvhk870000yhjbiqu3sqxo" class="article-share-link">Share</a>
+      <a data-url="https://zhangnanyue.github.io/2019/10/14/MarkDown语法总结/" data-id="ck1rxvsrd00003ijbnx67zb68" class="article-share-link">Share</a>
       
       
     </footer>
