@@ -84,26 +84,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>终于开始去写博客了，要学习下MarkDown语法，第一篇博客就用来整理，记录常用的MarkDown语法，方便以后的查询，使用。</p>
-<p>MarkDown语法主要分为以下几个部分：标题，强调，引用，分割线，列表等。</p>
+        <p>​        终于开始去写博客了，要学习下MarkDown语法，第一篇博客就用来整理，记录常用的MarkDown语法，方便以后的查询，使用。该篇语法总结不能一次性写全，所以会持续的更新，完善。</p>
+<p>​        MarkDown语法主要分为以下几个部分：标题，强调，引用，分割线，链接，列表，代码区块，转义字符等。</p>
 <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p><strong>功能</strong>：表示各级标题（最多有6级标题）</p>
 <p><strong>公式和说明</strong>：</p>
-<p><code>#</code>+<code>空格</code>+<code>文字</code>                </p>
-<p><strong>示例</strong>：</p>
+<p><code>#</code>+<code>空格</code>+<code>文字</code>        </p>
+<p>​    </p>
+<p><strong>注意</strong>：如果中间不加<code>空格</code>，在本地的MarkDown编辑器上可以正确显示，但同步到网站上，则不能正确显示    </p>
+<p>示例**：</p>
 <p># 我爱MarkDown</p>
 <p>## 我爱MarkDown</p>
 <p>### 我爱MarkDown</p>
 <p><strong>效果</strong>：</p>
-<h1 id="我爱MarkDown"><a href="#我爱MarkDown" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h1><h2 id="我爱MarkDown-1"><a href="#我爱MarkDown-1" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h2><h3 id="我爱MarkDown-2"><a href="#我爱MarkDown-2" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h3><p><strong>注意</strong>：如果中间不加<code>空格</code>，在本地的MarkDown编辑器上可以正确显示标题，但同步到网站上，则不能正确显示</p>
-<hr>
+<h1 id="我爱MarkDown"><a href="#我爱MarkDown" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h1><h2 id="我爱MarkDown-1"><a href="#我爱MarkDown-1" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h2><h3 id="我爱MarkDown-2"><a href="#我爱MarkDown-2" class="headerlink" title="我爱MarkDown"></a>我爱MarkDown</h3><hr>
 <h1 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h1><p><strong>功能</strong>：文字的倾斜，加粗，倾斜和加粗，加删除线。</p>
-<p><strong>公式和说明</strong>：</p>
+<p><strong>公式和说明</strong>：<code>*</code>可以换成<code>_</code>，效果相同</p>
 <p><strong><code>*</code>+<code>文字</code>+<code>*</code></strong>：文字倾斜</p>
-<p><strong><code>_</code>+<code>文字</code>+<code>_</code></strong>：文字倾斜</p>
 <p><code>**</code>+<code>文字</code>+<code>**</code>：文字加粗</p>
-<p><code>__</code>+<code>文字</code>+<code>__</code>：文字加粗</p>
 <p><code>***</code>+<code>文字</code>+<code>***</code>：文字加粗加斜</p>
-<p><strong><code>___</code>+<code>文字</code>+<code>___</code></strong>：文字加粗加斜</p>
 <p><code>~~</code>+<code>文字</code>+<code>~~</code>：文字加删除线</p>
 <p><strong>示例</strong>：</p>
 <p>*我爱MarkDown*     或      _我爱MarkDown_ </p>
@@ -120,23 +118,17 @@
 <p><strong>公式和说明</strong>：</p>
 <p><code>&gt;</code>+文字</p>
 <p><strong>示例</strong>：</p>
-<p>&gt;我爱MarkDown</p>
-<p>&gt;&gt;我爱MarkDown</p>
-<p>&gt;&gt;&gt;我爱MarkDown</p>
+<p>&gt; </p>
+<p>&gt; 我爱MarkDown1</p>
+<p>&gt;&gt; 我爱MarkDown2</p>
+<p>&gt;&gt;&gt; 我爱MarkDown3</p>
 <p><strong>效果</strong>：</p>
 <blockquote>
-<p>我爱MarkDown</p>
 </blockquote>
 <blockquote>
+<p>我爱MarkDown1</p>
 <blockquote>
-<p>我爱MarkDown</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>我爱MarkDown</p>
-</blockquote>
+<p>我爱MarkDown2</p>
 </blockquote>
 </blockquote>
 <hr>
@@ -161,13 +153,17 @@
 <hr>
 <hr>
 <hr>
-<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><strong>功能</strong>：添加网站链接，图片链接等</p>
+<h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p><strong>功能</strong>：添加网站链接，图片链接等。有两种表示方式，行内式和参考式，我们暂且先说行内式。</p>
 <p><strong>公式和说明</strong>：</p>
-<p>1、网站链接：</p>
-<p>[自定义名称1](url “自定义名称2”)</p>
-<p>2、图片链接：</p>
-<p>![自定义名称1](url “自定义名称2”)</p>
-<p><strong>注意</strong>：上面的<code>自定义名称2</code>是可有可无的。在照片链接中，<code>自定义名称1</code>会在照片下方显示。如果把鼠标悬停在图片上，优先显示<code>自定义名称2</code>的名字，如果没有<code>自定义名称2</code>,则显示<code>自定义名称1</code>的名字</p>
+<ol>
+<li><p>网站链接：</p>
+<p> [自定义名称1](url “自定义名称2”)</p>
+</li>
+<li><p>图片链接：</p>
+<p> ![自定义名称1](url “自定义名称2”)</p>
+</li>
+</ol>
+<p><strong>注意</strong>：上面的<code>自定义名称2</code>是可有可无的。在网站链接中，如果定义了<code>自定义名称2</code>，当鼠标悬停在网址上时，会显示出<code>自定义名称2</code>的名字，如果没有定义，则不显示任何东西；在照片链接中，<code>自定义名称1</code>会在照片下方显示。如果把鼠标悬停在图片上，优先显示<code>自定义名称2</code>的名字，如果没有<code>自定义名称2</code>,则显示<code>自定义名称1</code>的名字</p>
 <p><strong>示例</strong>：</p>
 <p>[我的github1](<a href="https://zhangnanyue.github.io">https://zhangnanyue.github.io</a>)</p>
 <p>[我的github2](<a href="https://zhangnanyue.github.io\">https://zhangnanyue.github.io\</a> “zhangnanyue”)</p>
@@ -178,11 +174,102 @@
 <p><a href="https://zhangnanyue.github.io" title="zhangnanyue">我的github2</a></p>
 <p><img src="https://s2.ax1x.com/2019/10/15/K9LU3R.th.jpg" alt="我家的橘猫1"></p>
 <p><img src="https://s2.ax1x.com/2019/10/15/K9LU3R.th.jpg" alt="我家的橘猫2" title="乖乖"></p>
+<hr>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p><strong>功能</strong>：分为有序列表和无序列表。有序列表会根据不同情况，用阿拉伯数字，字母等做有序的排列（在最后一个示例会有所体现）</p>
+<p><strong>公式和说明</strong>：</p>
+<ol>
+<li><p>无序列表：这里的<code>-</code>可以换成<code>+</code> 或者<code>*</code> 都是一样的效果</p>
+<p> <code>-</code>+<code>空格</code>+<code>文字</code></p>
+</li>
+<li><p>有序列表：</p>
+<p> <code>数字</code>+<code>.</code>+<code>空格</code>+<code>文字</code></p>
+</li>
+</ol>
+<p><strong>示例</strong>：</p>
+<p>- 我爱MarkDown1</p>
+<p>* 我爱MarkDown2</p>
+<p>+ 我爱MarkDown3</p>
+<p>1. 我爱MarkDown4</p>
+<p>3. 我爱MarkDown5</p>
+<p>9. 我爱MarkDown6</p>
+<p>1. 我爱MarkDown7</p>
+<p>​    1. 我爱MarkDown8</p>
+<p>​        1. 我爱MarkDown9</p>
+<p><strong>效果</strong>：</p>
+<ul>
+<li>我爱MarkDown1</li>
+</ul>
+<ul>
+<li>我爱MarkDown2</li>
+</ul>
+<ul>
+<li>我爱MarkDown3</li>
+</ul>
+<ol>
+<li><p>我爱MarkDown4</p>
+</li>
+<li><p>我爱MarkDown5</p>
+</li>
+<li><p>我爱MarkDown6</p>
+</li>
+<li><p>我爱MarkDown7</p>
+<ol>
+<li>我爱MarkDown8<ol>
+<li>我爱我爱MarkDown9</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h1 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h1><p><strong>功能</strong>：可以在区块中写代码</p>
+<p><strong>公式和说明</strong>：</p>
+<ol>
+<li><p>单行代码：</p>
+<p> 在``符号内添加代码即可</p>
+</li>
+<li><p>多行代码：</p>
+<p> ```</p>
+<p> 代码1</p>
+<p> 代码2</p>
+<p> 代码3</p>
+<p> …………</p>
+<p> ```</p>
+</li>
+</ol>
+<p><strong>示例</strong>：<br>`print(“我爱MarkDown”)`</p>
+<p>```</p>
+<p>include <iostream></iostream></p>
+<p>int main() {<br>    std::cout &lt;&lt; “我爱MarkDown” &lt;&lt; std::endl;<br>    return 0;<br>}</p>
+<p>```</p>
+<p><strong>效果</strong>：</p>
+<p><code>print(&quot;我爱MarkDown&quot;)</code></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"我爱MarkDown"</span> &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p><strong>注意</strong>：我在本地typora写Markdown文本时，对于多行的代码区块，只需要写开头的```，该编辑器就会自动输出代码区块， 无需补全结尾的```。此外，多行的代码区块，是有个两个字符的缩紧，所以和上面的单行代码块没有对齐(这两个问题，是因为语法问题，还是编辑器缘故，我也不清楚，有待探究）</p>
+<hr>
+<h1 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h1><p><strong>功能</strong>：可以将那些有特定含义的符号，输出为正常的符号</p>
+<p><strong>公式和说明</strong>：在特殊符号之前添加<code>\</code>符号，可以使特殊符号的作用失效。</p>
+<p><code>\</code>+特殊符号</p>
+<p><strong>示例</strong>：</p>
+<p>\# 我爱MarkDown1</p>
+<p>\* 我爱MarkDown2</p>
+<p>\—</p>
+<p>\+我爱MarkDown3</p>
+<p>\1. 我爱MarkDown4</p>
+<p><strong>效果</strong>：</p>
+<p># 我爱MarkDown1</p>
+<p>* 我爱MarkDown2</p>
+<p>-–</p>
+<p>+ 我爱MarkDown3</p>
+<p>\1. 我爱MarkDown4</p>
+<p>如果在特殊符号前不加转义字符，则会按照之前所有的MarkDown规则，输出相应的结果，但是在加了转义字符后，会将特殊字符变为正常的字符输出。</p>
+<hr>
+<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangnanyue.github.io/2019/10/14/MarkDown语法总结/" data-id="ck1rhm2zg00000zjb5f7jqifl" class="article-share-link">Share</a>
+      <a data-url="https://zhangnanyue.github.io/2019/10/14/MarkDown语法总结/" data-id="ck1rnum2s0001irjblk88c6xq" class="article-share-link">Share</a>
       
       
     </footer>
@@ -232,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhangnanyue.github.io/2019/10/12/hello-world/" data-id="ck1rhm2zj00010zjbg3lwo7gb" class="article-share-link">Share</a>
+      <a data-url="https://zhangnanyue.github.io/2019/10/12/hello-world/" data-id="ck1rnum2p0000irjbmek7w7e6" class="article-share-link">Share</a>
       
       
     </footer>
